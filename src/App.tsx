@@ -5,13 +5,24 @@ import getData from './DataServices/DataServices';
 import Advice from './Interfaces/Interface';
 
 function App() {
-  
+  const [theAdvice, setTheAdvice] = useState<Advice>();
+  const [count, setCount] = useState(0);
+
+  const changeData:() => void = () => {
+      setCount(count + 1);
+    }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getData();
+      setTheAdvice(data);
+    }
+    fetchData();
+  }, [count])
 
   return (
     <>
-    {/* <h1>{theAdvice && theAdvice.slip.advice}</h1>
-    <button onClick={() => fetchData()}>Rand</button> */}
-      <AdviceComponent />
+      <AdviceComponent advice={theAdvice!.slip.advice} id={theAdvice!.slip.id} click={changeData}/>
     </>
   );
 }
