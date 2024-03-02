@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <AdviceComponent advice={theAdvice!.slip.advice} id={theAdvice!.slip.id} click={changeData}/>
+      <AdviceComponent advice={theAdvice && theAdvice.slip.advice || "empty"} id={theAdvice && theAdvice.slip.id || 0} click={changeData}/>
     </>
   );
 }
