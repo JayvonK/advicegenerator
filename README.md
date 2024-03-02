@@ -4,8 +4,8 @@ Challenge - Advice Generator in React
 This challenge requires you to recreate a simple web design using typescript and react. The web design is a simple box that is center aligned with a button that will generate advices for the user. I replicated this by using an api to pull the advice data, then using a component from react to build the design, and then used hooks, functions and typescript to connect everything together.
 
 
-Peer Reviewed By:
-Peer Review:
+Peer Reviewed By: Zahid Afsar
+Peer Review:  The site is responsive and is functional as intended . The only thing I would suggest is that since the api sometimes has the same advice twice or more times you could make it that if the current fetch = next fetch make it continue to fetch until a differnt advice comes. Overall I would say that you did a great job.
 
 
 
