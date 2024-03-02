@@ -5,21 +5,12 @@ import getData from './DataServices/DataServices';
 import Advice from './Interfaces/Interface';
 
 function App() {
-  const [theAdvice, setTheAdvice] = useState<Advice>()
-
-  const fetchData = async () => {
-      const data = await getData();
-      setTheAdvice(data);
-    }
-
-  useEffect(() => {
-    // fetchData();
-  }, [])
+  
 
   return (
     <>
-    <h1>{theAdvice && theAdvice.slip.advice}</h1>
-    <button onClick={() => fetchData()}>Rand</button>
+    {/* <h1>{theAdvice && theAdvice.slip.advice}</h1>
+    <button onClick={() => fetchData()}>Rand</button> */}
       <AdviceComponent />
     </>
   );

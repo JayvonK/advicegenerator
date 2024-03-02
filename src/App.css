@@ -36,3 +36,73 @@
     transform: rotate(360deg);
   }
 }
+
+.adviceBox {
+  background-color: hsl(217, 19%, 24%);
+  width: 100%;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(./Assets/Manrope-Bold.ttf);
+}
+
+.Manrope {
+  font-family: Manrope;
+  font-weight: 800;
+  color: hsl(218, 23%, 86%);
+  text-align: center;
+}
+
+.dice {
+  border-radius: 60%;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  padding: 20px 21px;
+}
+
+.adviceCol {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diceDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -33px;
+}
+
+.quote {
+  font-size: 28px;
+  padding-bottom: 1.5rem;
+  /* letter-spacing: 1px; */
+  line-height: 40px;
+}
+
+.img {
+  width: 100%;
+  padding-bottom: 1.25rem;
+}
+
+.img2 {
+  width: 100%;
+  padding-bottom: 0.8rem;
+}
+
+.adviceNum {
+  color: hsl(150, 100%, 66%);
+  padding-bottom: 1rem;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 978px){
+  .adviceBox {
+    padding: 3rem 1.5rem;
+  }
+}
