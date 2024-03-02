@@ -1,3 +1,19 @@
+Jayvon Khuth
+3/1/2024
+Challenge - Advice Generator in React
+This challenge requires you to recreate a simple web design using typescript and react. The web design is a simple box that is center aligned with a button that will generate advices for the user. I replicated this by using an api to pull the advice data, then using a component from react to build the design, and then used hooks, functions and typescript to connect everything together.
+
+
+Peer Reviewed By:
+Peer Review:
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
